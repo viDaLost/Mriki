@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рикки - Мой виртуальный друг</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div id="app">
+        <div id="ricky-room">
+            <div id="ricky-container">
+                <!-- SVG-анимация Рикки -->
+                <img src="assets/ricky_animations/ricky_idle.svg" alt="Рикки" id="ricky">
+                <div id="sleep-indicator">Энергия: <span id="energy-value">100%</span></div>
+                <div id="health-indicator">Здоровье: <span id="health-value">100%</span></div>
+            </div>
+            <div id="actions">
+                <button onclick="goToSleep()">Сон</button>
+                <button onclick="openFeed()">Кормить</button>
+                <button onclick="openGames()">Игры</button>
+                <button onclick="openStore()">Магазин</button>
+                <button onclick="showHomework()">Домашка</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
